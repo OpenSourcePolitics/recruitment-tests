@@ -16,8 +16,8 @@ We know that you are a student, so it is normal that you do not know everything.
 * Feel free to write code without shame at first, then refactor it after. We all write nasty code at first, it's perfectly normal.
 
 ## Categories: 
-* ### Questions
-* ### CTF
-* ### Shell
-* ### Ruby
-* ### Rails
+* ### [Questions](./questions/questions.md)
+* ### [CTF](./CTF/ctf.md)
+* ### [Shell](./shell/shell.md)
+* ### [Ruby](./ruby/ruby.md)
+* ### [Rails](./rails/rails.md)
