@@ -14,7 +14,6 @@ class Test
     }
   end
 
-  def ouput
-
+  def output
   end
 end
