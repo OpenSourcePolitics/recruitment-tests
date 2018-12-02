@@ -20,6 +20,6 @@ We have designed various categories of tests so that everyone can feel confident
 ## Categories: 
 * ### [Questions](./questions/questions.md)
 * ### [CTF](./CTF/ctf.md)
-* ### [Shell](./shell/shell.md)
+* ### [Shell](shell/Readme.md)
 * ### [Ruby](./ruby/ruby.md)
 * ### [Rails](./rails/rails.md)
