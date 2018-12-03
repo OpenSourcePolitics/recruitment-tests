@@ -18,8 +18,8 @@ We have designed various categories of tests so that everyone can feel confident
 * Feel free to write code without shame at first, then refactor it after. We all write nasty code at first, it's perfectly normal.
 
 ## Categories: 
-* ### [Questions](./questions/questions.md)
-* ### [CTF](./CTF/ctf.md)
+* ### [Questions](./questions/Readme.md)
+* ### [CTF](./CTF/Readme.md)
 * ### [Shell](shell/Readme.md)
-* ### [Ruby](./ruby/ruby.md)
-* ### [Rails](./rails/rails.md)
+* ### [Ruby](./ruby/Readme.md)
+* ### [Rails](./rails/Readme.md)
