@@ -1,4 +1,9 @@
 # OSP recruitment tests
+
+**Stuck somewhere ? Ask us on gitter:**
+
+[![Gitter chat](https://badges.gitter.im/open-source-politics/org.png)](https://gitter.im/open-source-politics/Lobby)
+
 The purpose of these tests is to determine how you are approaching a situation. 
 
 We know that you are a student, so it is normal that you do not know everything. We would like to hear from you what you want to learn during your time working with us, and what we could provide you with.
