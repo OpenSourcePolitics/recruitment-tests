@@ -24,15 +24,16 @@ Also, your favorite search-engine is your friend. Learn how to use it! I recomme
 Lastly, if you are still stuck, you can join us on IRC
 You’re ready to start! Begin with Level 0, linked at the left of this page. Good luck!
 
-[Instructions for Bandit](https://overthewire.org/wargames/bandit.html)
+[Instructions for Bandit](http://overthewire.org/wargames/bandit/)
 
 ### Answers: 
 
-    Bandit1 ->
-    Bandit2 ->
-    Bandit3 ->
-    Bandit4 ->
-    Bandit5 ->
+    Bandit1 -> Ym9KOWpiYlVOTmZrdGQ3OE9PcHNxT2x0dXRNYzNNWTE=
+    Bandit2 -> Q1YxRHRxWFdWRlhUdk0yRjBrMDlTSHowWXdSSU5ZQTk=
+    Bandit3 -> 	VW1IYWRRY2xXbWdkTE9LUTNZTmdqV3hHb1JNYjVsdUs=
+    Bandit4 -> 	cEl3clBydFBOMzZRSVRTcDNFUWF3OTM2eWFGb0ZnQUI=
+    Bandit5 -> 	a29SZUJPS3VJRERlcHdoV2s3alpDMFJUZG9wbkFZS2g=
+
 
 ## Natas level 1 and 2 (or more if you like it)
 
