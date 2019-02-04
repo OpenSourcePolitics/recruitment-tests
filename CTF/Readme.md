@@ -28,11 +28,20 @@ You’re ready to start! Begin with Level 0, linked at the left of this page. Go
 
 ### Answers: 
 
-    Bandit1 -> Ym9KOWpiYlVOTmZrdGQ3OE9PcHNxT2x0dXRNYzNNWTE=
+     Bandit1 -> Ym9KOWpiYlVOTmZrdGQ3OE9PcHNxT2x0dXRNYzNNWTE=
     Bandit2 -> Q1YxRHRxWFdWRlhUdk0yRjBrMDlTSHowWXdSSU5ZQTk=
-    Bandit3 -> 	VW1IYWRRY2xXbWdkTE9LUTNZTmdqV3hHb1JNYjVsdUs=
-    Bandit4 -> 	cEl3clBydFBOMzZRSVRTcDNFUWF3OTM2eWFGb0ZnQUI=
-    Bandit5 -> 	a29SZUJPS3VJRERlcHdoV2s3alpDMFJUZG9wbkFZS2g=
+    Bandit3 -> VW1IYWRRY2xXbWdkTE9LUTNZTmdqV3hHb1JNYjVsdUs=
+    Bandit4 -> cEl3clBydFBOMzZRSVRTcDNFUWF3OTM2eWFGb0ZnQUI=
+    Bandit5 -> a29SZUJPS3VJRERlcHdoV2s3alpDMFJUZG9wbkFZS2g=
+    Bandit6 -> RFhqWlBVTEx4WXIxN3V3b0kwMWJOTFFidEZlbUVnbzc=
+    Bandit7 -> SEtCUFRLUW5JYXk0Rnc3NmJFeThQVnhLRURRUktUenM=
+    Bandit8 -> Y3ZYMkpKYTRDRkFMdHFTODdqazI3cXdxR2hCTTlwbFY=
+    Bandit9 -> VXN2VnlGU2ZaWldiaTZ3Z0M3ZEFGeUZ1UjZqUVFVaFI=
+    Bandit10 -> dHJ1S0xkanNiSjVnN3l5SjJYMlIwbzNhNUhRSkZ1TGs=
+    Bandit11 -> SUZ1a3dLR3NGVzhNT3EzSVJGcXJ4RTFoeFRORWJVUFI=
+    Bandit12 -> NVRlOFk0ZHJnQ1JmQ3g4dWdkd3VFWDhLRkM2azJFVXU=
+
+
 
 
 ## Natas level 1 and 2 (or more if you like it)
