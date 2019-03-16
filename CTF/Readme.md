@@ -28,7 +28,8 @@ You’re ready to start! Begin with Level 0, linked at the left of this page. Go
 
 ### Answers: 
 
-     Bandit1 -> Ym9KOWpiYlVOTmZrdGQ3OE9PcHNxT2x0dXRNYzNNWTE=
+    
+    Bandit1 -> Ym9KOWpiYlVOTmZrdGQ3OE9PcHNxT2x0dXRNYzNNWTE=
     Bandit2 -> Q1YxRHRxWFdWRlhUdk0yRjBrMDlTSHowWXdSSU5ZQTk=
     Bandit3 -> VW1IYWRRY2xXbWdkTE9LUTNZTmdqV3hHb1JNYjVsdUs=
     Bandit4 -> cEl3clBydFBOMzZRSVRTcDNFUWF3OTM2eWFGb0ZnQUI=
@@ -40,8 +41,6 @@ You’re ready to start! Begin with Level 0, linked at the left of this page. Go
     Bandit10 -> dHJ1S0xkanNiSjVnN3l5SjJYMlIwbzNhNUhRSkZ1TGs=
     Bandit11 -> SUZ1a3dLR3NGVzhNT3EzSVJGcXJ4RTFoeFRORWJVUFI=
     Bandit12 -> NVRlOFk0ZHJnQ1JmQ3g4dWdkd3VFWDhLRkM2azJFVXU=
-
-
 
 
 ## Natas level 1 and 2 (or more if you like it)
@@ -61,8 +60,8 @@ URL:      http://natas0.natas.labs.overthewire.org
 
 ### Answers: 
 
-    Natas1 ->
-    Natas2 ->
+    Natas1 ->Z3RWckR1aURmY2s4MzFQcVdzTEVaeTVneUR6MWNsdG8=
+    Natas2 ->Wmx1cnVBdGhRazdRMk1xbURlVGlVaWoyWnZXeTJtQmk=
 
 ## Leviathan level 1 and 2 (or more if you like it)
 This wargame doesn't require any knowledge about programming - just a bit of common
