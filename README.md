@@ -16,8 +16,9 @@ We have designed various categories of tests so that everyone can feel confident
 **How to :**
 * Fork this repo
 * Start a new branch with a unique name
-* Resolve the levels in any order
 * Send a PR to this repo on master branch
+* Resolve the levels in any order
+* Update your PR accordingly
 
 **Advices :**
 * Feel free to write code without shame at first, then refactor it after. We all write nasty code at first, it's perfectly normal.
