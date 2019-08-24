@@ -1,0 +1,24 @@
+
+<h1>Liens</h1>
+ <% @links.take(6).each do |link| %>
+
+<h2><%= link.title %></h2>
+
+<p><%= "le lien posté par "+link.name %></p>
+<p><%= link.description %></p>
+<a href="<%= link_path(link.id) %>" class="btn btn-primary"> en savoir plus </a>
+<a href="<%= edit_link_path(link.id) %>" class="btn btn-warning" > modifer</a>
+<a href="<%= link_path(link.id) %>" class="btn btn-danger" data-method="DELETE"> supprimer</a>
+
+
+
+
+
+ <% end %>
+
+ <p>
+
+   <a href="<%= new_link_path %>" class="btn btn-success" > ajouter</a>
+
+
+ </p>
