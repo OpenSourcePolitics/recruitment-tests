@@ -1,13 +1,4 @@
-class Zombie
-
-attr_accerssor :name
-
-def initialize
-
-@name = 'Ash'
-end
-
-
-
-
+class Test
+  def smallest_or_highest(arr, sort)
+  end
 end
