@@ -1,0 +1,26 @@
+function hello_bye(){
+
+
+echo "Entrer hello ou bye"
+   
+ name=$(/usr/bin/whoami)
+
+ read var
+  
+if [ $var != "hello" && != "bye" ]
+ then
+ echo "No argument provided, script requires argument"
+echo "Entrer hello ou bye"
+read var2
+
+ elif [ $var = "bye" ||  ]
+ then
+ echo "byebye $name"
+ elif [ $var = "hello" || $var = "hello"$var = "bye"]
+ echo "welcome $name"
+ fi
+ 
+
+}
+
+hello_bye
