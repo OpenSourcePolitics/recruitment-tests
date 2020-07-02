@@ -1,3 +1,5 @@
+require 'time'
+
 class Test
   def input
     {
@@ -15,5 +17,23 @@ class Test
   end
 
   def output
+    cars = input[:cars]
+    rentals = input[:rentals]
+
+    #  Assert that cars are ordered
+    cars.sort_by { |car| car[:id] }
+
+    results = []
+    rentals.each do |rental|
+      car_id = rental[:car_id]
+      car_rented = cars[car_id - 1]
+      rented_duration_price = ((Time.parse(rental[:end_date]) - Time.parse(rental[:start_date])) / 86400 + 1) * car_rented[:price_per_day]
+      distance_price = rental[:distance] * car_rented[:price_per_km]
+      total_price =  rented_duration_price + distance_price
+      results << { "id": rental[:id],  "price": total_price }
+    end
+    return {"rentals": results}
   end
 end
+
+puts Test.new.output
