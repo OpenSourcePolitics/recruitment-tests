@@ -1,2 +1,2 @@
-def MainHelper
+module MainHelper
 end

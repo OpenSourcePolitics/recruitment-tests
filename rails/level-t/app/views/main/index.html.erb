@@ -1,14 +1,22 @@
 <h1>My wonderful list of links</h1>
 
-<ul>
-<% @links.each do |link| %>
-    <li><a href="<%= link.body %>"><%= link.title %></a> par <%= link.author %></li>
-<% end %>
-</ul>
+<% if current_user %>
+    <%= link_to "Sign out" , destroy_user_session_path, method: :delete %>
+    <ul>
+    <% @links.each do |link| %>
+        <li><a href="<%= link.body %>"><%= link.title %></a> par <%= link.author %></li>
+    <% end %>
+    </ul>
 
-<%= form_tag( "/main/index/" , method: "post") do %>
-    Titre: <%= text_field_tag (:title) %>
-    Lien: <%= text_field_tag (:body) %>
-    Auteur: <%= text_field_tag (:author) %>
-    <input type="submit" value="Ajouter un lien">
+    <%= form_tag( "/main/index/" , method: "post") do %>
+        Titre: <%= text_field_tag (:title) %>
+        Lien: <%= text_field_tag (:body) %>
+        Auteur: <%= text_field_tag (:author) %>
+        <input type="submit" value="Ajouter un lien">
+    <% end %>
+
+    <a href="/address">Add address for user </a>
+<% else %>
+    <%= link_to  "Register", new_user_registration_path %>
+    <%= link_to "Sign in", new_user_session_path %>
 <% end %>

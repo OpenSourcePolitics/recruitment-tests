@@ -14,7 +14,7 @@ In this level you must set up a service that allows a user to store addresses in
 **Instructions:**
 * index page should display a call to action to register/ sign in.
 * A visitor should be able to register.
-* A visitor should be able to store an adress, wich will be displayed on a map.
+* A visitor should be able to store an address, which will be displayed on a map.
 
 ### Level I
 We want to build our own custom url shortener with a tracker for authenticated users. It is as simple as that.

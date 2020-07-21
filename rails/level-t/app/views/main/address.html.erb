@@ -1,0 +1,29 @@
+<h1>Votre adresse : Utilisateur n°<%= current_user.id %></h1>
+
+<% if current_user.has_address %>
+  <div id="mapid"></div>
+  <script>
+    var mymap = L.map('mapid').setView([<%= current_user.lat %>, <%= current_user.lon %>], 13);
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      id: 'mapbox/streets-v11',
+      tileSize: 512,
+      zoomOffset: -1,
+      accessToken: 'pk.eyJ1IjoiZHlubmFtbW8iLCJhIjoiY2tjbmQzNTk0MGEwYjJ0bG01Z3JxNmR6YSJ9.PSuRXDUUQxaWB2rHCzyLAw'
+    }).addTo(mymap);
+  </script>
+<% else %>
+  <p>Aucune adresse renseignée</p>
+<% end %>
+
+<h2>Mettre à jour votre adresse</h2>
+<%= form_tag( "/address/" , method: "post") do %>
+  Street: <%= text_field_tag (:street) %>
+  Number: <%= text_field_tag (:number) %>
+  City: <%= text_field_tag (:city) %>
+  <input type="submit" value="MàJ adresse">
+<% end %>
+
+<%= link_to "Main", "/main/index/" %>
