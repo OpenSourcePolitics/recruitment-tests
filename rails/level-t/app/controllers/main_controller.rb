@@ -10,7 +10,7 @@ class MainController < ApplicationController
   end
 
   def create
-    Link.create title: params[:title], body: "https://#{params[:body]}", author: params[:author]
+    l = Link.create title: params[:title], body: "https://#{params[:body]}", author: params[:author], user: current_user
     redirect_to '/main/index'
   end
 

@@ -65,3 +65,4 @@ gem "devise"
 gem 'leaflet-rails'
 gem 'excon'
 gem 'json'
+gem 'shortener'

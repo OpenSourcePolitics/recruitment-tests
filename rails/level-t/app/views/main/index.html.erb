@@ -4,7 +4,12 @@
     <%= link_to "Sign out" , destroy_user_session_path, method: :delete %>
     <ul>
     <% @links.each do |link| %>
-        <li><a href="<%= link.body %>"><%= link.title %></a> par <%= link.author %></li>
+        <li>
+            <a href="<%= short_url(link.body) %>" target="_blank"><%= link.title %></a> par <%= link.author %>
+            <% if current_user == link.user %>
+                <span>Count : <%= Shortener::ShortenedUrl.where(:url => "#{link.body}/").first.use_count %></span>
+            <% end %>
+        </li>
     <% end %>
     </ul>
 
