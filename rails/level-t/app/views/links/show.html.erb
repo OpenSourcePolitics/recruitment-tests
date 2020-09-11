@@ -1,0 +1,13 @@
+<h1>Link to <%= @link.title %></h1>
+
+<h1></h1>
+<h4><%= @link.url %></h4>
+<h5>shared by <%= @link.name %></h5>
+<p><%= @link.body %></p>
+
+<%= button_to  '/links' , { method: 'get', title: 'Back'} do %>
+  <%= fa_icon "arrow-left" %>
+<% end %>
+<br>
+<hr class="debug">
+<p class="debug">Find me in app/views/links/show.html.erb</p>

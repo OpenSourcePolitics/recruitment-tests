@@ -1,0 +1,19 @@
+<h1>Update Link Details</h1>
+
+<%= form_with model: @link do |form| %>
+  <ul>
+      <li><%= form.text_field :title, placeholder: "title" %></li>
+      <li><%= form.text_field :url, placeholder: "url" %></li>
+      <li><%= form.text_field :body, placeholder: "body" %></li>
+      <li><%= form.text_field :name, placeholder: "name" %></li>
+  </ul>
+  <%= form.submit %>
+<% end %>
+<%= button_to  '/links' , { method: 'get', title: 'Back'} do %>
+  <%= fa_icon "arrow-left" %>
+<% end %>
+
+
+<br>
+<hr class="debug">
+<p class="debug">Find me in app/views/links/edit.html.erb</p>

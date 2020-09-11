@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LevelR</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <ul>
+    <% if user_signed_in? %>
+      <li><%= link_to "Utilisateur #{current_user.email}", edit_user_registration_path %></li>
+      <li><%= link_to 'Se déconnecter', destroy_user_session_path, method: :delete %></li>
+    <% else %>
+      <li><%= link_to 'Se connecter', new_user_session_path %></li>
+      <li><%= link_to "S'enregistrer", new_user_registration_path %></li>
+    <% end %>
+  </ul>
+
+    <%= yield %>
+  </body>
+</html>

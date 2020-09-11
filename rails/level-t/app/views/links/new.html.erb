@@ -1,0 +1,18 @@
+<h1>Links#new</h1>
+
+
+<%= form_with model: @link do |form| %>
+  <%= form.text_field :title, placeholder: "title" %>
+  <%= form.text_field :url, placeholder: "url" %>
+  <%= form.text_field :body, placeholder: "body" %>
+  <%= form.text_field :name, placeholder: "name" %>
+
+  <%= form.submit %>
+<% end %>
+<%= button_to  '/links' , { method: 'get', title: 'Back'} do %>
+  <%= fa_icon "arrow-left" %>
+<% end %>
+
+<br>
+<hr class="debug">
+<p class="debug">Find me in app/views/links/new.html.erb</p>

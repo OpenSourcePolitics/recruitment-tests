@@ -1,0 +1,42 @@
+<h1>Links</h1>
+
+<p>
+6 from <%=@links.size%> available links.
+  <%= button_to  '/links' , { method: 'get', title: 'Refresh'} do %>
+    Refresh
+  <% end %>
+</p>
+<table>
+  <!--  .sample(6) permet de prendre 6 éléments au hasard-->
+  <% @links.sample(6).each do |link| %>
+    <tr>
+      <td><%= link_to link.title, link.url, title: link.body %></td>
+      <td>shared by <%=link.name%></td>
+
+      <td>
+        <%= button_to  link_path(link) , { method: 'get', title: 'show'} do %>
+          <%= fa_icon "eye" %>
+        <% end %>
+      </td>
+      <td>
+        <%= button_to  edit_link_path(link) , { method: 'get', title: 'edit' } do %>
+          <%= fa_icon "edit" %>
+        <% end %>
+      </td>
+      <td>
+        <%= button_to  link_path(link) , { method: 'get', title: 'delete',  data: { confirm: 'Are you sure?' }} do %>
+          <%= fa_icon "trash" %>
+        <% end %>
+      </td>
+  <% end %>
+</table>
+<br>
+<%= button_to  new_link_path , { method: 'get', title: 'create' } do %>
+   <%= fa_icon "plus" %>
+<% end %>
+
+
+
+<br>
+<hr class="debug">
+<p class="debug">Find me in app/views/links/index.html.erb</p>
