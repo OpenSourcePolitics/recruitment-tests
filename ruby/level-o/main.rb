@@ -1,13 +1,7 @@
 class Test
-  def smallest_or_highest(arr, sort)
-    # arr est un array
-    case sort
-    when 'min'
-      return arr.min
-    when 'max'
-      return arr.max
-    else
-      return arr
-    end
+  def smallest_or_highest(arr, arg)
+    arr.send(arg.to_sym)
+  rescue NoMethodError
+    arr
   end
 end
