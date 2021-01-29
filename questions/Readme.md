@@ -1,7 +1,7 @@
 # Questions
 **Instructions:** Answer the questions, be concise.
 
-## What is an Object? 
+## What is an Object?
 
     Answer ->
 
@@ -18,5 +18,5 @@
     Answer ->
 
 ## Set up a challenge for another candidate in order to test his/her abilities, explain your choice.
-   
+
     Answer ->
