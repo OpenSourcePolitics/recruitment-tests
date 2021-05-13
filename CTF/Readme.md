@@ -28,11 +28,11 @@ You’re ready to start! Begin with Level 0, linked at the left of this page. Go
 
 ### Answers: 
 
-    Bandit1 ->
-    Bandit2 ->
-    Bandit3 ->
-    Bandit4 ->
-    Bandit5 ->
+    Bandit1 -> Ym9KOWpiYlVOTmZrdGQ3OE9PcHNxT2x0dXRNYzNNWTEK
+    Bandit2 -> Q1YxRHRxWFdWRlhUdk0yRjBrMDlTSHowWXdSSU5ZQTkK
+    Bandit3 -> VW1IYWRRY2xXbWdkTE9LUTNZTmdqV3hHb1JNYjVsdUsK
+    Bandit4 -> cEl3clBydFBOMzZRSVRTcDNFUWF3OTM2eWFGb0ZnQUIK
+    Bandit5 -> a29SZUJPS3VJRERlcHdoV2s3alpDMFJUZG9wbkFZS2gK
 
 ## Natas level 1 and 2 (or more if you like it)
 
