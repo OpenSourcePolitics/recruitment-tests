@@ -1,3 +1,4 @@
+require 'date'
 class Test
   def input
     {
@@ -15,5 +16,11 @@ class Test
   end
 
   def output
+    a=Hash.new
+    a[:rentals]=[]
+    input[:rentals].each{ |rental|
+       a[:rentals].append({"id": rental[:id], "price": rental[:distance]*input[:cars][rental[:car_id]-1][:price_per_km]+(Date.parse(rental[:end_date]).mday-Date.parse(rental[:start_date]).mday+1)*input[:cars][rental[:car_id]-1][:price_per_day]}) 
+    }
+    return a
   end
 end
