@@ -29,3 +29,4 @@ We have designed various categories of tests so that everyone can feel confident
 * ### [Shell](shell/Readme.md)
 * ### [Ruby](./ruby/Readme.md)
 * ### [Rails](./rails/Readme.md)
+* ### [Automation](./automation/Readme.md)
