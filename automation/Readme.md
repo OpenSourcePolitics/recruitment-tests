@@ -34,7 +34,7 @@ You will need to create a public IP address to be assigned to the created server
 
 # Docker
 
-## Ceeate a Docker image of a Ruby on Rails application
+## Create a Docker image of a Ruby on Rails application
 
 Write a Dockerfile to deploy a basic Rails application
 
