@@ -2,7 +2,7 @@
 
 ## Deploy infrastructure on Scaleway
 
-Complete the main.tf Terraform file in charge of creating the following infrastructure using the Scaleway provider :
+Complete the `main.tf` Terraform file in charge of creating the following infrastructure using the Scaleway provider :
 
 - **Instance** 
     - name : decidim-app
