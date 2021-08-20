@@ -9,7 +9,7 @@
 
     Answer ->
 
-## [For Python developers] Can you name 5 python librairies that you have you used for your personal or studies project and how they were useful? 
+## [For Python developers] Can you name 5 python librairies that you used during your previous jobs (studies, personal or professional projects) and how they were useful? 
 
     Answer ->
 
