@@ -9,6 +9,10 @@
 
     Answer ->
 
+## [For Python developers] Can you name 5 python librairies that you used during your previous jobs (studies, personal or professional projects) and how they were useful? 
+
+    Answer ->
+
 ## A real estate developer has constructed a more than 100-storey building in the heart of Manhattan. Several months after the inauguration, residents complain about slow elevators, what can the real estate developer do to solve this problem?
 
     Answer ->
