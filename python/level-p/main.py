@@ -1,10 +1,3 @@
-# code initial :
-# def fizzbuzz(n):
-#     pass
-
-# test failed : range à partir de 1, mais
-# la réponse n'apparaît pas en tableau
-
 def fizzbuzz (n) :
 
     list_answer = []
