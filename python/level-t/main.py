@@ -2,9 +2,12 @@
 #     pass
 
 
+
 def is_palindrome (string) :
     
-    comparison_str = string [::-1]
+    lower_case_str = string.lower()
+    comparison_str = lower_case_str [::-1]
     
-    if string == comparison_str:
+
+    if lower_case_str == comparison_str:
         return True
