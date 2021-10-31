@@ -6,17 +6,21 @@
 # la réponse n'apparaît pas en tableau
 
 def fizzbuzz (n) :
+
+    list_answer = []
+
     if n <= 0 :
-        return []
+        list_answer
+
     else :
-        for x in range(n+1) :
-            if x == 0 :
-                continue
+        for x in range(1, n+1) :
             if (x % 3 == 0 and x % 5 == 0):
-                print ('fizzbuzz')
+                list_answer.append ('fizzbuzz')
             elif (x % 3 == 0):
-                print ('fizz')
+                list_answer.append ('fizz')
             elif (x % 5 == 0):
-                print ('buzz')
+                list_answer.append ('buzz')
             else:
-                print (str(x))
+                list_answer.append (str(x))
+
+    return list_answer
