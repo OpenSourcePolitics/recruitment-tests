@@ -2,7 +2,7 @@
 # def fizzbuzz(n):
 #     pass
 
-# test failed : fizzbuzz ok, mais
+# test failed : range à partir de 1, mais
 # la réponse n'apparaît pas en tableau
 
 def fizzbuzz (n) :
@@ -10,11 +10,13 @@ def fizzbuzz (n) :
         return []
     else :
         for x in range(n+1) :
+            if x == 0 :
+                continue
             if (x % 3 == 0 and x % 5 == 0):
                 print ('fizzbuzz')
             elif (x % 3 == 0):
-                print('fizz')
+                print ('fizz')
             elif (x % 5 == 0):
                 print ('buzz')
             else:
-                print (x)
+                print (str(x))
