@@ -34,6 +34,12 @@ class Project:
 test = Project (1)
 test.counted_votes()
 
+# output :
+# 10
+# 11
+# 10
+# 11
+
 # class Most_Supported_Project:
 # #Project with the most of votes
 #     def __init__ (self):
