@@ -10,8 +10,7 @@ import numpy as np
 
 # DETAILS : [(votes of participant 1), (votes of participants 2), ...]
 
-
-participants_votes = [(10,5),(1,3)]
+participants_votes = [(10,5),(2,3),(3,2)]
 
 
 class Project:
@@ -28,17 +27,21 @@ class Project:
         i = self.rank -1
         
         for tuple in counting:
-            vote += tuple[i]
-            print (vote)
+            #for set in tuple:
+                vote += tuple[i]
+                print (vote)
 
-test = Project (1)
+test = Project (2)
 test.counted_votes()
 
 # output :
+# 5
+# 8
 # 10
-# 11
+# 5
+# 8
 # 10
-# 11
+
 
 # class Most_Supported_Project:
 # #Project with the most of votes
