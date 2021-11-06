@@ -3,28 +3,26 @@ import numpy as np
 # def compute_executable_projects(n, participants_votes, project_range):
 #     pass
 
-# EXAMPLES INPUT AND RESULTS
-# (2, [(10,5),(0,3)],2) == [1,2]
-# (3, [(2,3,4),(7,10,2),(0,0,0)], 1) == [2]
-# (1, [(8,9)], 0) == 'No projects, sorry!'
+#input :
+details_set = (2, [(10,5),(0,3)],2) 
 
-# DETAILS : [(votes of participant 1), (votes of participants 2), ...]
+# expected output
+# == [1,2]
 
-participants_votes = [(10,5),(2,3),(3,2)]
+number_of_participants = details_set[0]
+participants_votes = details_set[1]
+number_of_supported_projects = details_set[2]
+
 
 class Project:
-# Project box with rank and votes per participants
+
     def __init__ (self, rank):
         self.rank = rank
-        #self.votes = self.counted_votes()
 
-# for each tuple in array particpants_votes
-# pick the vote of rank-1   
     def counted_votes(self):
         counting = np.array(participants_votes)
         vote = 0
         i = self.rank -1
-        
         for tuple in counting:
                 vote += tuple[i]
         return (vote)
@@ -34,14 +32,15 @@ test = Project (2)
 print(test.counted_votes())
 
 # output :
-# 10
-
+# 8
 
 # class Most_Supported_Project:
-# #Project with the most of votes
-#     def __init__ (self):
+# # #Project with the most of votes
+#     def __init__ (self, project, vote):
+#         self.project = project
+#         self.vote = self.counted_votes()
 
-
+#     def get_best_project (self):
 
 # def compute_executable_projects (n, participants_votes, project_range):
 # # n = number of particpants
