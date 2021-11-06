@@ -14,6 +14,20 @@ participants_votes = details_set[1]
 number_of_supported_projects = details_set[2]
 
 
+class Vote:
+
+    def __init__ (self):
+        self.number_of_participants = number_of_participants
+        self.participants_votes = participants_votes
+
+    def isChecked (self):
+        self.number_of_participants == len(self.participants_votes)
+        return 
+
+details_set = Vote
+print (bool(details_set.isChecked))
+
+
 class Project:
 
     def __init__ (self, rank):
