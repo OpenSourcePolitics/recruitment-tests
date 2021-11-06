@@ -12,12 +12,11 @@ import numpy as np
 
 participants_votes = [(10,5),(2,3),(3,2)]
 
-
 class Project:
 # Project box with rank and votes per participants
     def __init__ (self, rank):
         self.rank = rank
-        self.votes = self.counted_votes()
+        #self.votes = self.counted_votes()
 
 # for each tuple in array particpants_votes
 # pick the vote of rank-1   
@@ -27,19 +26,14 @@ class Project:
         i = self.rank -1
         
         for tuple in counting:
-            #for set in tuple:
                 vote += tuple[i]
-                print (vote)
+        return (vote)
+        
 
 test = Project (2)
-test.counted_votes()
+print(test.counted_votes())
 
 # output :
-# 5
-# 8
-# 10
-# 5
-# 8
 # 10
 
 
