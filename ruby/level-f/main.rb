@@ -1,8 +1,8 @@
 # class Test
 #   def rot13(string)
 
-string = 'Ada Lovelace'
-string.downcase!
+string = 'H2G2'
+#string.downcase!
 
 substitution = {
   'a' => 'n',
@@ -33,7 +33,7 @@ substitution = {
   'z' => 'm'
 }
 
-convert_string = string.gsub(/\w/,substitution)
+convert_string = string.gsub(/[a-z]/,substitution)
 
 final_name = convert_string.gsub(/\S+/) {|word| word.capitalize}
 # keep in mind this other syntax :
