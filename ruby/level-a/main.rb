@@ -1,24 +1,24 @@
 #class Test
 
-def fibonacci(n)
-  a = 0
-  b = 1
-
-  # Compute Fibonacci number in the desired position.
-  n.times do
-      temp = a
-      a = b
-      # Add up previous two numbers in sequence.
-      b = temp + b
-  end
-
-  return a
-end
-
-# Write first 15 Fibonacci numbers in sequence.
-15.times do |n|
-  result = fibonacci(n)
-  puts result
-end
+    # n = number of months
+    def fibo(n)
+      # begin by 0 rabbit
+      pre_previous = 0
+      # first month = 1 pair
+      previous = 1
+  
+      n.times do
+        # Fibonnaci sequence use the sum of the 2 previous results
+        # to return the total number of pairs of rabbits
+        # at n month 
+        temp = pre_previous
+        pre_previous = previous
+        previous = temp + previous
+      end
+  
+      print pre_previous
+    end
 
 #end
+
+fibo(15)
