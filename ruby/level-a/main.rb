@@ -1,4 +1,4 @@
-#class Test
+class Test
 
     # n = number of months
     def fibo(n)
@@ -16,9 +16,7 @@
         previous = temp + previous
       end
   
-      print pre_previous
+      return pre_previous
     end
 
-#end
-
-fibo(15)
+end
