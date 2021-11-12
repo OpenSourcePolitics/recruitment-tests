@@ -1,15 +1,13 @@
-#class Test
+class Test
 
  def smallest_or_highest(arr, sort)
     if sort == 'min'
-      print arr.min
+      return arr.min
     elsif sort == 'max'
-      print arr.max
+      return arr.max
     else
-      print arr
+      return arr
     end
   end
 
-smallest_or_highest([34,15,88,2], 'any')
-
-#end
+end
