@@ -1,43 +1,43 @@
-# class Test
-#   def rot13(string)
+class Test
+  def rot13(string)
 
-string = 'H2G2'
-#string.downcase!
+    string.downcase!
 
-substitution = {
-  'a' => 'n',
-  'b' => 'o',
-  'c' => 'p',
-  'd' => 'q',
-  'e' => 'r',
-  'f' => 's',
-  'g' => 't',
-  'h' => 'u',
-  'i' => 'v',
-  'j' => 'w',
-  'k' => 'x',
-  'l' => 'y',
-  'm' => 'z',
-  'n' => 'a',
-  'o' => 'b',
-  'p' => 'c',
-  'q' => 'd',
-  'r' => 'e',
-  's' => 'f',
-  't' => 'g',
-  'u' => 'h',
-  'v' => 'i',
-  'w' => 'j',
-  'x' => 'k',
-  'y' => 'l',
-  'z' => 'm'
-}
+    substitution = {
+      'a' => 'n',
+      'b' => 'o',
+      'c' => 'p',
+      'd' => 'q',
+      'e' => 'r',
+      'f' => 's',
+      'g' => 't',
+      'h' => 'u',
+      'i' => 'v',
+      'j' => 'w',
+      'k' => 'x',
+      'l' => 'y',
+      'm' => 'z',
+      'n' => 'a',
+      'o' => 'b',
+      'p' => 'c',
+      'q' => 'd',
+      'r' => 'e',
+      's' => 'f',
+      't' => 'g',
+      'u' => 'h',
+      'v' => 'i',
+      'w' => 'j',
+      'x' => 'k',
+      'y' => 'l',
+      'z' => 'm'
+    }
 
-convert_string = string.gsub(/[a-z]/,substitution)
+    convert_string = string.gsub(/[a-z]/,substitution)
 
-final_name = convert_string.gsub(/\S+/) {|word| word.capitalize}
+    final_name = convert_string.gsub(/\S+/) {|word| word.capitalize}
 # keep in mind this other syntax :
 # final_name = convert_string.gsub(/\S+/, &:capitalize)
 
-print final_name
-
+    return final_name
+  end
+end
