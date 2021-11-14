@@ -1,43 +1,25 @@
 class Test
+    
   def rot13(string)
+      string.downcase!
+      str_to_arr = string.chars
 
-    string.downcase!
+      # building the subsitution hash
+      alphabet = ("a".."z").to_a
 
-    substitution = {
-      'a' => 'n',
-      'b' => 'o',
-      'c' => 'p',
-      'd' => 'q',
-      'e' => 'r',
-      'f' => 's',
-      'g' => 't',
-      'h' => 'u',
-      'i' => 'v',
-      'j' => 'w',
-      'k' => 'x',
-      'l' => 'y',
-      'm' => 'z',
-      'n' => 'a',
-      'o' => 'b',
-      'p' => 'c',
-      'q' => 'd',
-      'r' => 'e',
-      's' => 'f',
-      't' => 'g',
-      'u' => 'h',
-      'v' => 'i',
-      'w' => 'j',
-      'x' => 'k',
-      'y' => 'l',
-      'z' => 'm'
-    }
+      # as ("n".."m") doesn't work
+      new_order_beginning = ("n".."z").to_a
+      new_order_end = ("a".."m").to_a
 
-    convert_string = string.gsub(/[a-z]/,substitution)
+      new_order = [new_order_beginning, new_order_end].reduce([], :concat)
 
-    final_name = convert_string.gsub(/\S+/) {|word| word.capitalize}
-# keep in mind this other syntax :
-# final_name = convert_string.gsub(/\S+/, &:capitalize)
+      substitution = alphabet.zip(new_order).to_h
 
-    return final_name
+
+      convert_string = string.gsub(/[a-z]/,substitution)
+
+      final_name = convert_string.gsub(/\S+/) {|word| word.capitalize}
+      return final_name
   end
+
 end
