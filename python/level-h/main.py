@@ -37,6 +37,9 @@ def votes_per_project(participants_votes, n):
     organised_results = dict(zip(rank, result))
     print ("this is the dico :", organised_results)
 
+    rank_by_votes = dict(sorted(organised_results.items(), key=lambda x:x[1], reverse = True))
+    print ("projects are ranked by vote :", rank_by_votes)
+
 
 def compute_executable_projects (project_range):
     if project_range == 0:
