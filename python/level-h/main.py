@@ -12,9 +12,9 @@ n = details_set[0]
 participants_votes = details_set[1]
 project_range = details_set[2]
 
-print ("number of participants : " + str(n))
-print ("array of votes, per participants : " + str(participants_votes))
-print ("number of allocated budget : " + str(project_range))
+print ("number of participants : ", n)
+print ("array of votes, per participants : ", participants_votes)
+print ("number of allocated budget : ", project_range)
 
 
 def votes_per_project(participants_votes, n):
@@ -32,6 +32,10 @@ def votes_per_project(participants_votes, n):
         i +=1
 
     print ("these are the vote for each project : ", result)
+    
+    rank = list(range(1,n+1))
+    organised_results = dict(zip(rank, result))
+    print ("this is the dico :", organised_results)
 
 
 def compute_executable_projects (project_range):
