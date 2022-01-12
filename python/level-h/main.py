@@ -5,7 +5,7 @@ import numpy as np
 
 
 # # #input example for visual tests :
-details_set = (2, [(10,5),(1,3)], 2) 
+details_set = (3, [(2,3,4),(7,10,2),(0,0,0)], 1)
 
 
 n = details_set[0]
@@ -17,29 +17,28 @@ print ("array of votes, per participants : " + str(participants_votes))
 print ("number of allocated budget : " + str(project_range))
 
 
-def counted_votes():
-    counting = np.array(participants_votes)
-    vote = 0
+def votes_per_project(participants_votes, n):
+    votes_per_participant = np.array(participants_votes)
+    print ("these are the votes of each participant : ", votes_per_participant)
+
     i = 0
     result = []
-    for tuple in counting:
-        vote += tuple[i]
-    result.append(vote)
-    print (result)
+
+    while i <= (n-1):
+        vote = 0
+        for each_tuple in votes_per_participant:            
+            vote += each_tuple[i]
+        result.append(vote)
+        i +=1
+
+    print ("these are the vote for each project : ", result)
 
 
 def compute_executable_projects (project_range):
     if project_range == 0:
         print ('No projects, sorry!')
     else:
-        counted_votes ()
+        votes_per_project (participants_votes, n)
 
 
 compute_executable_projects (project_range)
-
-
-# output :
-# number of participants : 2
-# array of votes, per participants : [(10, 5), (1, 3)]
-# number of allocated budget : 2
-# [11]
