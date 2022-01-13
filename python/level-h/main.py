@@ -7,19 +7,18 @@ import numpy as np
 # # #input example for visual tests :
 details_set = (3, [(2,3,4),(7,10,2),(0,0,0)], 1)
 
-
 n = details_set[0]
 participants_votes = details_set[1]
 project_range = details_set[2]
 
-print ("number of participants : ", n)
-print ("array of votes, per participants : ", participants_votes)
-print ("number of allocated budget : ", project_range)
+# print ("number of participants : ", n)
+# print ("array of votes, per participants : ", participants_votes)
+# print ("number of allocated budget : ", project_range)
 
 
-def votes_per_project(participants_votes, n):
+def votes_per_project(n, participants_votes, project_range):
     votes_per_participant = np.array(participants_votes)
-    print ("these are the votes of each participant : ", votes_per_participant)
+    #print ("these are the votes of each participant : ", votes_per_participant)
 
     i = 0
     result = []
@@ -31,23 +30,22 @@ def votes_per_project(participants_votes, n):
         result.append(vote)
         i += 1
 
-    print ("these are the vote for each project :", result)
+    #print ("these are the vote for each project :", result)
 
     rank = list(range(1, n+1))
     organised_results = dict(zip(rank, result))
-    print ("this is the dico : ", organised_results)
+    #print ("this is the dico : ", organised_results)
 
     rank_by_votes = dict(sorted(organised_results.items(), key=lambda x:x[1], reverse = True))
-    print ("projects are ranked by vote :", rank_by_votes)
+    #print ("projects are ranked by vote :", rank_by_votes)
 
-    print ("-> Selected projects : ", list(rank_by_votes.keys())[:project_range])
+    print (list(rank_by_votes.keys())[:project_range])
 
 
 def compute_executable_projects (n, participants_votes, project_range):
     if project_range == 0:
         print ('No projects, sorry!')
     else:
-        votes_per_project (participants_votes, n)
-
+        votes_per_project (n, participants_votes, project_range)
 
 compute_executable_projects (n, participants_votes, project_range)
