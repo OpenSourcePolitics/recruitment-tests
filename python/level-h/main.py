@@ -26,26 +26,28 @@ def votes_per_project(participants_votes, n):
 
     while i <= (n-1):
         vote = 0
-        for each_tuple in votes_per_participant:            
+        for each_tuple in votes_per_participant:
             vote += each_tuple[i]
         result.append(vote)
-        i +=1
+        i += 1
 
-    print ("these are the vote for each project : ", result)
-    
-    rank = list(range(1,n+1))
+    print ("these are the vote for each project :", result)
+
+    rank = list(range(1, n+1))
     organised_results = dict(zip(rank, result))
-    print ("this is the dico :", organised_results)
+    print ("this is the dico : ", organised_results)
 
     rank_by_votes = dict(sorted(organised_results.items(), key=lambda x:x[1], reverse = True))
     print ("projects are ranked by vote :", rank_by_votes)
 
+    print ("-> Selected projects : ", list(rank_by_votes.keys())[:project_range])
 
-def compute_executable_projects (project_range):
+
+def compute_executable_projects (n, participants_votes, project_range):
     if project_range == 0:
         print ('No projects, sorry!')
     else:
         votes_per_project (participants_votes, n)
 
 
-compute_executable_projects (project_range)
+compute_executable_projects (n, participants_votes, project_range)
