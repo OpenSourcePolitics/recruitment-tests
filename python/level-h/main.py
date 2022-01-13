@@ -1,7 +1,6 @@
 import numpy as np
+from typing import List, Tuple
 
-# def compute_executable_projects(n, participants_votes, project_range):
-#     pass
 
 
 # # #input example for visual tests :
@@ -11,33 +10,21 @@ n = details_set[0]
 participants_votes = details_set[1]
 project_range = details_set[2]
 
-# print ("number of participants : ", n)
-# print ("array of votes, per participants : ", participants_votes)
-# print ("number of allocated budget : ", project_range)
 
+def votes_per_project(n : int, participants_votes : List[Tuple[int, int]], project_range : int)-> List[int]:
+    """
+    check votes for each project and return the eligible projects depending of project_range
+    """
+    votes = {}
+    for counter, element in enumerate(participants_votes[0]):
+        votes[counter + 1] = element
 
-def votes_per_project(n, participants_votes, project_range):
-    votes_per_participant = np.array(participants_votes)
-    #print ("these are the votes of each participant : ", votes_per_participant)
+    for next_votes in participants_votes[1:]:
+        for counter, element in enumerate(next_votes):
+            votes[counter + 1] += element
 
-    i = 0
-    result = []
-
-    while i <= (n-1):
-        vote = 0
-        for each_tuple in votes_per_participant:
-            vote += each_tuple[i]
-        result.append(vote)
-        i += 1
-
-    #print ("these are the vote for each project :", result)
-
-    rank = list(range(1, n+1))
-    organised_results = dict(zip(rank, result))
-    #print ("this is the dico : ", organised_results)
-
-    rank_by_votes = dict(sorted(organised_results.items(), key=lambda x:x[1], reverse = True))
-    #print ("projects are ranked by vote :", rank_by_votes)
+    print ("votes :", votes)
+    rank_by_votes = dict(sorted(votes.items(), key=lambda x:x[1], reverse = True))
 
     print (list(rank_by_votes.keys())[:project_range])
 
