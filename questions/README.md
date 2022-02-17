@@ -42,4 +42,4 @@
     Given '"Hulk"', your function should return '"Sorry I don't like you !"' 
 
     Explanation : I think this challenge will manage to test a candidate's ability to use the if-elif-else conditional statements.  
-
+ 

@@ -24,3 +24,4 @@ def fizzbuzz(n):
             else: result.append(str(n))
 
         return result 
+

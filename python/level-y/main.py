@@ -44,10 +44,3 @@ results=[]
 results.append([a,b,c,d])
 
 
-
-
-
-
-
-
-
