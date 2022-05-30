@@ -52,8 +52,9 @@ URL:      http://natas0.natas.labs.overthewire.org
 
 ### Answers: 
 
-    Natas1 ->
-    Natas2 ->
+    Natas0 -> gtVrDuiDfck831PqWsLEZy5gyDz1clto
+    Natas1 -> ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi
+    Natas2 -> sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14
 
 ## Leviathan level 1 and 2 (or more if you like it)
 This wargame doesn't require any knowledge about programming - just a bit of common
@@ -72,8 +73,9 @@ Data for the levels can be found in the homedirectories. You can look at /etc/le
 
 ### Answers: 
 
-    Leviathan1 ->
-    Leviathan2 ->
+    Leviathan0 -> rioGegei8m
+    Leviathan1 -> ougahZi8Ta
+    Leviathan2 -> Ahdiemoo1j
 
 ## Krypton level 1 and 2 (or more if you like it)
 Welcome to Krypton! The first level is easy. The following string encodes the password using Base64:
