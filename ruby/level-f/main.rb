@@ -4,4 +4,5 @@ class Test
   end
 end
 
-puts rot13('OMQEMDUEQMEK')
+r = Test.new
+puts r.rot13('Claude Elwood Shannon')
