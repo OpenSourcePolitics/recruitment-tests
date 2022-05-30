@@ -87,5 +87,6 @@ Use this password to log in to krypton.labs.overthewire.org with username krypto
 
 ### Answers: 
 
-    Krypton1 ->
-    Krypton2 ->
+    Krypton0 -> KRYPTONISGREAT 
+    Krypton1 -> ROTTEN
+    Krypton2 -> CAESARISEASY
