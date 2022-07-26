@@ -28,11 +28,12 @@ You’re ready to start! Begin with Level 0, linked at the left of this page. Go
 
 ### Answers: 
 
-    Bandit1 ->
-    Bandit2 ->
-    Bandit3 ->
-    Bandit4 ->
-    Bandit5 ->
+    Bandit0 -> boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+    Bandit1 -> CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+    Bandit2 -> UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+    Bandit3 -> pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+    Bandit4 -> koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+    Bandit5 -> DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 
 ## Natas level 1 and 2 (or more if you like it)
 
@@ -51,8 +52,9 @@ URL:      http://natas0.natas.labs.overthewire.org
 
 ### Answers: 
 
-    Natas1 ->
-    Natas2 ->
+    Natas0 -> gtVrDuiDfck831PqWsLEZy5gyDz1clto
+    Natas1 -> ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi
+    Natas2 -> sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14
 
 ## Leviathan level 1 and 2 (or more if you like it)
 This wargame doesn't require any knowledge about programming - just a bit of common
@@ -71,8 +73,9 @@ Data for the levels can be found in the homedirectories. You can look at /etc/le
 
 ### Answers: 
 
-    Leviathan1 ->
-    Leviathan2 ->
+    Leviathan0 -> rioGegei8m
+    Leviathan1 -> ougahZi8Ta
+    Leviathan2 -> Ahdiemoo1j
 
 ## Krypton level 1 and 2 (or more if you like it)
 Welcome to Krypton! The first level is easy. The following string encodes the password using Base64:
@@ -84,5 +87,6 @@ Use this password to log in to krypton.labs.overthewire.org with username krypto
 
 ### Answers: 
 
-    Krypton1 ->
-    Krypton2 ->
+    Krypton0 -> KRYPTONISGREAT 
+    Krypton1 -> ROTTEN
+    Krypton2 -> CAESARISEASY

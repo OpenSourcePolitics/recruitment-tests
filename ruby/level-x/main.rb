@@ -1,3 +1,4 @@
+require 'date'
 class Test
   def input
     {
@@ -14,6 +15,23 @@ class Test
     }
   end
 
+  def calculate_price(rental_id)
+    rental = input[:rentals].find { | rental| rental[:id] == rental_id}
+    cars = input[:cars]
+    car = cars.find { |car| car[:id] == rental[:car_id] }
+    days = (Date.parse(rental[:end_date]) - Date.parse(rental[:start_date])).to_i + 1
+    days * car[:price_per_day] + rental[:distance] * car[:price_per_km]
+  end
+
   def output
+    {
+      "rentals":
+        input[:rentals].map do |rental|
+          {
+            id: rental[:id],
+            price: calculate_price(rental[:id])
+          }
+        end
+    }
   end
 end
