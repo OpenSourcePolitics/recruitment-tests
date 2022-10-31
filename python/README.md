@@ -69,7 +69,7 @@ Given a list of projects previously set, each citizen gives points to each proje
 
 You'll design a function that takes three arguments : 
 - the **number** of participants `n`
-- the **list** of the participants'votes `votes`.  A `vote` consist of a dictionnary with *n* keys. Each key represent the title of a project, and its value the number of point given by the particpant to the project. As instance if `votes = [{'P1':7},{P1:0}}`, it means there was 2 votes: first one gave 7 pts to the project called `P1`, second one giving 0 pts to the same project.
+- the **list** of the participants'votes `votes`.  A `vote` consist of a dictionnary with *n* keys. Each key represent the title of a project, and its value the number of point given by the particpant to the project. As instance if `votes = [{"Project 1":7},{"Project 1":0}}`, it means there was 2 votes: first one gave 7 pts to the project called `Project 1`, second one giving 0 pts to the same project.
 - a threshold `t` of type **integer** which indicates how much points projects must receive to be realized.
 
 
