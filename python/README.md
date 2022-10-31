@@ -1,6 +1,6 @@
 ## Python
 
-For this part we are using [Pytest](https://pytest.org) as a test driven development framework. Levels are independant, but again do not hesitate to skip if you have difficulties or commit work even if it isn't finished.
+For this part we are using [Pytest](https://pytest.org) as a test driven development framework. Levels are independant, but again do not hesitate to skip if you have difficulties and **commit and push work even if it isn't finished**.
 
 To install pytest, type in a terminal:
 
@@ -10,20 +10,21 @@ To install pytest, type in a terminal:
 * For each level, make test(s) go green.
 
 ### Level P
-The Fizzbuzz programm is a classical game with simple rules: you must count from 1 until a given integer. If your integer is a multiple of 3, you must say 'fizz'. If it's a multiple of 5, you must say 'buzz'. For multiples of 3 and 5 you should obviously say 'fizzbuzz'. For any other case, just say the integer.
+The Fizzbuzz programm is a classical game with simple rules: you must count from 1 until a given integer. If your integer is a multiple of 3, you must say `fizz`. If it's a multiple of 5, you must say `buzz`. For multiples of 3 and 5 you should obviously say `fizzbuzz`. For any other case, just say the integer.
+
 Implement the `fizzbuzz` function receiving an integer as an argument and following these rules. Your solution must return an array correctly filled. Return an empty array if the given integer is less or equal than 0.
 
 #### Examples
-Given `3` your solution should return `['1', '2', 'fizz']`
-Given `15` your solution will return `['1', '2', 'fizz', '4', 'buzz', 'fizz', '7', '8', 'fizz', 'buzz', '11', 'fizz','13','14','fizzbuzz']`
-Given `0` your solution will return `[]`
+- Given `3` your solution should return `['1', '2', 'fizz']`
+- Given `15` your solution will return `['1', '2', 'fizz', '4', 'buzz', 'fizz', '7', '8', 'fizz', 'buzz', '11', 'fizz','13','14','fizzbuzz']`
+- Given `0` your solution will return `[]`
 
 **Instructions:**
 * Modify only `main.py`
 
 **Run test:**
 
-``pytest ./level-p/``
+`pytest ./level-p/`
 
 ### Level Y
 A climatologist contacts you to help him compute metadata based on temperatures measured this year. Giving you an array of temperatures, he wants to have the median, the average, min and max temperature of the dataset.
@@ -31,9 +32,9 @@ A climatologist contacts you to help him compute metadata based on temperatures 
 Your function will take as input an array of temperatures and return an array containing the 4 wanted computation wanted : median, average, min and max. If the length of the dataset is odd, the median will be the average of the two 'central' numbers (e.g median of `[1,2]` is `1.5`). All values should be rounded at 10<sup>-1</sup> (e.g `1.52` will be rounded to `1.5`, `1.67` will be rounded to `1.7`). Consider 
 
 #### Examples
-Given `[13, 14]` your function will return `[13.5, 13.5, 13,14]`
-Given `[4, 18, 34, 12, 17]` your function will return `[17, 17, 4, 34]`
-Given `[78.89]` your function will return `[78.9, 78.9,78.9, 78.9]`
+- Given `[13, 14]` your function will return `[13.5, 13.5, 13,14]`
+- Given `[4, 18, 34, 12, 17]` your function will return `[17, 17, 4, 34]`
+- Given `[78.89]` your function will return `[78.9, 78.9,78.9, 78.9]`
 
 **Instructions:**
 * Modify only `main.py`
@@ -49,17 +50,17 @@ Complete the `is_palindrome` function which receives a string as an argument and
 As we would like to accept sentences, you'll have to check for spaces,
 
 #### Examples
-Given `"Kayak"` your function will return `True`  
-Given `"Success"` your function will return `False`
-Given `"Sator Arepo Tenet Opera Rotas"` your function will return `True`
-Given `"Tu l'as trop ecrase Cesar, ce port-salut!"` your function will return `True`
+- Given `"Kayak"` your function will return `True`  
+- Given `"Success"` your function will return `False`
+- Given `"Sator Arepo Tenet Opera Rotas"` your function will return `True`
+- Given `"Tu l'as trop ecrase Cesar, ce port-salut!"` your function will return `True`
 
 **Instructions:**
 * Modify only `main.py`
 
 **Run test:**
 
-``rspec ./level-t/``
+`pytest ./level-t/`
 
 ### Level H
 The town of Democracity decided to organize a participatory budget to encourage citizens to take part to the decision process. A participatory budget is a procedure that help deciding the major what projects should be conducted by the city.
@@ -77,12 +78,12 @@ Given these inputs you must return a [set](https://docs.python.org/3/tutorial/da
 #### Examples
 - The input `1, [{"Planting trees": 10, "Music festival": 5}], 4` means we have:
     - number of participants = **1**
-    - this participant gave 10 points to the project `Planting trees` and 5 points to the project `Music festival`
+    - this participant gave 10 poihttps://tutorial.djangogirls.org/nts to the project `Planting trees` and 5 points to the project `Music festival`
     - a project must have at least 4 points to be realized
     - therefore the output of your program should be `{"Planting trees", "Music festival"}` since they both received enough points.
 - Given the input `1, [{"Planting trees": 10, "Music festival": 5}], 6`, we should return `{"Planting trees"}` : same input as above, but threshold raised to 5 means the `"Music festival"` cannot be realized
-- Given the input `2, [{"Planting trees": 10, "Music festival": 5}, {"Planting trees": 3, "Music festival": 1}], 6`, we should return `{"Planting trees", "Music festival"}`, since the first received 10+3 = 13 pts, and the second one 5+1 = 6pts. Having both a number of points greater or equal than the threshold, they'll be realized.
-- Given the input `2, [{"Planting trees": 10, "Music festival": 5}, {"Planting trees": 3, "Music festival": 1}], 15`, we should return `{}` since the threshold is so high, that no projects reach it.
+- Given the input `2, [{"Planting trees": 10, "Music festival": 5}, {"Planting trees": 3, "Music festival": 1}], 6`: same as above but with 2 voters. We should return `{"Planting trees", "Music festival"}`, since the first received 10+3 = 13 pts, and the second one 5+1 = 6pts. Having both a number of points greater or equal than the threshold, they'll be realized.
+- Given the input `2, [{"Planting trees": 10, "Music festival": 5}, {"Planting trees": 3, "Music festival": 1}], 15`: we should return `{}` since the threshold is so high, that no projects reach it.
 
 **Instructions:**
 * Modify only `main.py`
@@ -90,4 +91,4 @@ Given these inputs you must return a [set](https://docs.python.org/3/tutorial/da
 
 **Run test:**
 
-``python ./level-h/``
+`python ./level-h/`
