@@ -67,7 +67,7 @@ Given `"Tu l'as trop ecrase Cesar, ce port-salut!"` your function will return `T
 ### Level H
 The town of Democracity decided to organize a participatory budget to encourage citizens to take part to the decision process. A participatory budget is a procedure that help deciding the major what projects should be conducted by the city.
 
-Given a list of projects previously set, each citizen gives points to each projects. You're working in a famous company which deploys the democracy software that ship this participatory budget, and we ask you know to determine the final rankings.
+Given a list of projects previously set, each citizen gives points to each projects. You're working in a famous company which deploys the democracy software that ships this participatory budget, and we ask you know to determine the final rankings.
 
 You'll design a function that takes three arguments : 
 - the number of participants `n`
